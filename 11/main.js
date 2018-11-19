@@ -1,17 +1,17 @@
 
 document.querySelectorAll('.slider').forEach(function (element) {
-    var slideSize = element.clientWidth;
-        currentPosition = 0;
-        buttonLeft = document.getElementById('left');
-        buttonRight = document.getElementById('right');
+    var slideSize = element.clientWidth,
+        currentPosition = 0,
+        buttonLeft = document.querySelector('#left'),
+        buttonRight = document.querySelector('#right');
 
         buttonLeft.onclick = sliderLeft;
         buttonRight.onclick = sliderRight;
-        
+
         function sliderLeft () {
             currentPosition -= slideSize;
-            if (currentPosition >= 2540) {
-            currentPosition = 1920
+            if (currentPosition >= element.scrollWidth) {
+            currentPosition = element.scrollWidth - 2*slideSize;
             }
             element.scroll({
                 left: currentPosition,
