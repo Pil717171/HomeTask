@@ -7,7 +7,7 @@ html, body {
 .header {
     background-color: #afab00;
     height: 100px;  
-    border: 5px solid white;
+    margin: 5px;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -23,7 +23,7 @@ html, body {
 .footer {
     background-color: #af0036;
     height: 100px;
-    border: 5px solid white;
+    margin: 5px;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -32,8 +32,8 @@ html, body {
 .sidebar {
     background-color: #3737be;
     width: 100px;
-    border-left: 5px solid white;
-    border-right: 5px solid white;
+    margin-left: 5px;
+    margin-right: 5px;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -42,8 +42,8 @@ html, body {
 .content {
     display: flex;
     flex-direction: column;
-    width: calc(100% - 100px);
-    border-right: 5px solid white;
+    width: calc(100% - 105px);
+    margin-right: 5px;
 
 }
 
@@ -59,7 +59,7 @@ html, body {
 .other-content {
     background-color: #49af00;
     height: 100px;
-    border-top: 5px solid white;
+    margin-top: 5px;
     display:flex;
     justify-content:center;
     align-items:center;
