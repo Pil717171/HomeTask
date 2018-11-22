@@ -14,7 +14,7 @@ function getReversArray(array) {
     var result = [];
 
     for (var i = array.length; i > 0; i--) {
-        result[array.length - i] = array[i-1];
+        result[array.length - i] = array[i - 1];
     }
     return result;
 }
