@@ -1,0 +1,30 @@
+$color: #2d2d2d
+
+@mixin text 
+    color: $color
+    font-weight: bold
+
+.radio 
+    margin-left: 20px
+    color: #767676
+    &_clear
+        color: $color
+        &.voxy-radio__box
+            border-color: $color
+    &_question   
+        margin-bottom: 1.5em
+        font-size: 24px
+        @include text 
+    &_options
+        display: flex
+        flex-direction: column
+        &-item
+            margin-bottom: 2em
+            font-size: 19px
+            align-items: flex-start
+            &__selected.radio_option-item-text
+                @include text
+
+                    
+
+
