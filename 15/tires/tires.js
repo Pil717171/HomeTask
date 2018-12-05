@@ -1,25 +1,26 @@
-var pirelli = document.querySelector(".tires-wheel"),
-    image = document.querySelector(".tires-images"),
-    text = document.querySelector(".tires-text");
+function drive (element) {
+    element.classList.add("tires-whell__rotate");    
+};
 
-    pirelli.onmouseover = drive;
-    text.onmouseover = drive;
+function drive2 (element) {
+    element.classList.add("tires-images__drive"); 
+};
 
-    function drive () {
-        image.classList.remove("tires-images__driveRevers");
-        pirelli.classList.remove("tires-whell__rotateRevers");
-        image.classList.add("tires-images__drive");
-        pirelli.classList.add("tires-whell__rotate");
-    }
+function coord () {
+    document.querySelectorAll(".tires-images").forEach(function (images) {
+        var coord = images.getBoundingClientRect()
+        if (coord.y < document.documentElement.clientHeight) {
+            drive2(images);
+            document.querySelectorAll(".tires-wheel").forEach(function (wheel) {
+                var coord2 = wheel.getBoundingClientRect()
+                if (coord2.y < document.documentElement.clientHeight) {
+                    drive(wheel);
+                }
+            })    
+        }
+    })
+}
 
-    pirelli.onmouseout = driveRevers;
-    text.onmouseout = driveRevers;
+window.onscroll =  coord;
 
-    function driveRevers () {
-        image.classList.remove("tires-images__drive");
-        pirelli.classList.remove("tires-whell__rotate");
-        image.classList.add("tires-images__driveRevers");
-        pirelli.classList.add("tires-whell__rotateRevers");
-    }
 
-   
