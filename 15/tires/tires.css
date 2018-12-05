@@ -11,7 +11,7 @@
 }
 
 .tires-images {
-    position: absolute;
+    position: relative;
     left: -250px;
     top: 50px;
     transition: transform 1s ease-out;
