@@ -1,0 +1,25 @@
+.tires {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18pt; }
+  .tires-ultra {
+    color: purple; }
+  .tires-images {
+    left: -250px;
+    top: 50px;
+    transition: transform 1s ease-out; }
+    .tires-images__drive {
+      transform: translate(400px, 0);
+      transition: transform 1s ease-out; }
+  .tires-text {
+    width: 500px;
+    margin-top: 50px;
+    margin-left: 450px; }
+  .tires-wheel {
+    width: 450px;
+    height: 450px;
+    transition: transform 1s ease-out; }
+    .tires-wheel__rotate {
+      transform: rotate(180deg); }
