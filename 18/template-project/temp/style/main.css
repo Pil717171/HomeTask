@@ -1,0 +1,26 @@
+.dropdown_menu {
+  width: 160px;
+  height: 35px;
+  border: solid 0.5px gray;
+  border-radius: 5px;
+  margin-left: 50px;
+  margin-top: 25px; }
+  .dropdown_menu-button_open {
+    display: inline-block;
+    padding-left: 15px;
+    position: relative;
+    bottom: 3px;
+    cursor: pointer;
+    transform: rotate(90deg);
+    transition: 0.4s; }
+    .dropdown_menu-button_open:hover {
+      color: blue; }
+  .dropdown_menu-items {
+    display: none;
+    background-color: #eeeeee; }
+    .dropdown_menu-items__open {
+      display: block; }
+
+html, body {
+  height: 100%;
+  width: 100%; }
